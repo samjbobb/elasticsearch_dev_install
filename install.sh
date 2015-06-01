@@ -14,3 +14,5 @@ printf "# Settings for local development\nindex.number_of_shards: 1\nindex.numbe
 # Configure elasticsearch to automatically start during bootup
 sudo update-rc.d elasticsearch defaults 95 10
 
+# Start it up
+sudo service elasticsearch start
