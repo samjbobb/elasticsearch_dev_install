@@ -16,3 +16,10 @@ sudo update-rc.d elasticsearch defaults 95 10
 
 # Start it up
 sudo service elasticsearch start
+
+# Install plugins
+sudo /usr/share/elasticsearch/bin/plugin install elasticsearch/elasticsearch-analysis-icu/2.5.0
+sudo /usr/share/elasticsearch/bin/plugin  install mobz/elasticsearch-head
+sudo /usr/share/elasticsearch/bin/plugin install polyfractal/elasticsearch-inquisitor
+sudo /usr/share/elasticsearch/bin/plugin install karmi/elasticsearch-paramedic
+sudo /usr/share/elasticsearch/bin/plugin install elasticsearch/marvel/latest
