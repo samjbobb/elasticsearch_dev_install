@@ -9,7 +9,7 @@ CONFIG_FILE="/etc/elasticsearch/elasticsearch.yml"
 sudo cp $CONFIG_FILE $CONFIG_FILE.orig
 
 # Uncomment dev settings lines
-printf "# Settings for local development\nindex.number_of_shards: 1\nindex.number_of_replicas: 0\ndiscovery.zen.ping.multicast.enabled: false\nnode.local: true\n" | sudo tee -a $CONFIG_FILE
+printf "# Settings for local development\nindex.number_of_shards: 1\nindex.number_of_replicas: 0\ndiscovery.zen.ping.multicast.enabled: false\nnode.local: true\nmarvel.agent.enabled: false\n" | sudo tee -a $CONFIG_FILE
 
 # Configure elasticsearch to automatically start during bootup
 sudo update-rc.d elasticsearch defaults 95 10
